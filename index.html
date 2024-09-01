@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHero API- Desafio Latam</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/sh1.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+            SuperHero API JQuery
+        </a>
+    </nav>
+    <main>
+        <section>
+            <!-- Formulario de búsqueda -->
+            <div class="container text-center mt-5">
+                <img src="assets/img/sh2.jpg" alt="SuperHero" class="img-fluid mb-4">
+                <h2>Encuentra tu SuperHero</h2>
+                <p>Ingresa el número del SuperHero a buscar</p>
+                <form id="search-form">
+                    <div class="form-group">
+                        <input type="text" id="hero-id" class="form-control" placeholder="Ej: 1">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <!-- Resultado -->
+            <div id="hero-result" class="container mt-5">
+                <!-- Aquí se insertarán los resultados de la búsqueda -->
+
+                 <!-- Agregar la card con el detalle del heroe -->
+                <div class="card mb-4">
+                    <!-- Hero image, name, details, etc. -->
+                </div>
+                <!-- Gráfica con el poder del heroe -->
+                <div id="chartContainer">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

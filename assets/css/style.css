@@ -1,0 +1,47 @@
+:root {
+    --main-bg-color: #333;
+    --main-text-color: #fff;
+    --primary-color: #007bff;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#hero-result {
+    margin-top: 50px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+#chartContainer {
+    height: 370px; width: 100%;
+}
+
+
+
+.card-body {
+    color: #333; 
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #000; 
+}
+
+.card-text {
+    color: #555; 
+}
+
+.card {
+    border: 1px solid #ddd; 
+}
