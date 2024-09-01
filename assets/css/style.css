@@ -20,22 +20,22 @@ h2 {
 
 .card {
     margin-bottom: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    overflow: hidden; 
 }
-
-#chartContainer {
-    height: 370px; width: 100%;
-}
-
-
 
 .card-body {
-    color: #333; 
+    color: #333;
+    padding: 20px;
+ 
 }
 
 .card-title {
     font-weight: bold;
     font-size: 1.5rem;
-    color: #000; 
+    color: #000;
+    margin-bottom: 10px; 
 }
 
 .card-text {
@@ -44,4 +44,12 @@ h2 {
 
 .card {
     border: 1px solid #ddd; 
+}
+
+#chartContainer {
+    height: 370px; width: 100%;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden; 
+ 
 }

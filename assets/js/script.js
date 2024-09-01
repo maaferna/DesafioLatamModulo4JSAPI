@@ -28,6 +28,7 @@ $(document).ready(function() {
 
     // Función para renderizar la información del héroe
     function renderHeroData(hero) {
+        console.log(hero);
         const heroCard = `
             <div class="card mb-4">
                 <div class="row no-gutters">
@@ -66,15 +67,17 @@ $(document).ready(function() {
             // Verificar si el contenedor del gráfico existe antes de intentar inicializar el gráfico
             if (document.getElementById('chartContainer')) {
                 const statsData = [
-                    { y: parseInt(hero.powerstats.intelligence), label: "Intelligence" },
-                    { y: parseInt(hero.powerstats.strength), label: "Strength" },
-                    { y: parseInt(hero.powerstats.speed), label: "Speed" },
-                    { y: parseInt(hero.powerstats.durability), label: "Durability" },
-                    { y: parseInt(hero.powerstats.power), label: "Power" },
-                    { y: parseInt(hero.powerstats.combat), label: "Combat" }
+                    { y: parseInt(hero.powerstats.intelligence), label: "Intelligence", legendText: "Intelligence" },
+                    { y: parseInt(hero.powerstats.strength), label: "Strength", legendText: "Strength" },
+                    { y: parseInt(hero.powerstats.speed), label: "Speed", legendText: "Speed" },
+                    { y: parseInt(hero.powerstats.durability), label: "Durability", legendText: "Durability" },
+                    { y: parseInt(hero.powerstats.power), label: "Power", legendText: "Power" },
+                    { y: parseInt(hero.powerstats.combat), label: "Combat", legendText: "Combat" }
                 ];
-
+        
                 const chart = new CanvasJS.Chart("chartContainer", {
+                    animationEnabled: true,
+                    theme: "light2",
                     title: {
                         text: `Estadísticas de Poder para ${hero.name}`
                     },
